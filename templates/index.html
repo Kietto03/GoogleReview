@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Comment Sentiment Predictor</h1>
+        <form id="sentimentForm">
+            <label for="comment">Enter your comment:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Type your comment here..." required></textarea>
+            <button type="submit">Predict Sentiment</button>
+        </form>
+    </div>
+
+    <!-- Modal for result -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Prediction Result</h2>
+            <p id="resultText">Your sentiment will appear here!</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+/* General body styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/08/Google-Play-new-logo-centered-hero.jpg");
+    background-size: cover;
+    /* Cover the entire page */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+/* Semi-transparent container for the form */
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    /* White background with 90% opacity */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #4a90e2;
+    opacity: 0.9;
+    /* Text opacity */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    opacity: 0.9;
+    /* Label opacity */
+}
+
+textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    opacity: 0.9;
+    /* Textarea opacity */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.9;
+    /* Button opacity */
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+
+/* Modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Modal background with 90% opacity */
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 1.5em;
+    float: right;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
